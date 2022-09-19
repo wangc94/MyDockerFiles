@@ -1,0 +1,18 @@
+name: base
+channels:
+- conda-forge
+dependencies:
+- cudatoolkit=11.3
+- numpy=1.20.2
+- python=3.8.8
+- pytorch::pytorch=1.11.0
+- pytorch::torchvision=0.12.0
+- tqdm=4.64.0
+- netCDF4=1.5.7
+- scikit-image=0.18.1
+- scikit-learn=0.24.1
+- gxx_linux-64
+- nuitka
+- pip
+- pip:
+  - opencv-python-headless==4.3.0.38

@@ -1,0 +1,47 @@
+name: base
+channels:
+- conda-forge
+dependencies:
+# base
+- conda
+- pip
+- scipy
+- pandas
+- numpy=1.20.2
+- python=3.8.8
+- matplotlib
+- seaborn
+# python formatter
+- pip:
+  - jedi-language-server
+- isort
+- black
+- flake8
+# pytorch
+- cudatoolkit=11.3
+- pytorch::pytorch=1.11.0
+- pytorch::torchvision=0.12.0
+# machine learning and image
+- Pillow
+- scikit-image=0.18.1
+- scikit-learn=0.24.1
+- pip:
+  - opencv-python-headless==4.3.0.38
+#nuitka
+- nuitka
+- gxx_linux-64
+# jupyter
+- jupyterlab-git
+- jupyterlab
+- notebook
+- nodejs
+# others
+- tqdm
+- netCDF4=1.5.7
+- cartopy
+- ipympl
+- jupyterlab_execute_time
+- jupyterlab-lsp
+- python-lsp-server
+- jupyterlab_code_formatter
+
